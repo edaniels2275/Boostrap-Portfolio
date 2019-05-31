@@ -1,13 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Eli's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon"
+        href="https://edaniels2275.github.io/headerIcon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <style>
+        .navbar { 
+            margin-bottom: 50px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: whitesmoke;
+            text-align: center;
+            z-index:-1000;
+        }
+
+        #contentColumn {
+            padding:50px
+        }
+
+        .navbar-header {
+            background-color: steelblue;
+            z-index: 50;
+        }
+
+        h1.name {
+            -webkit-text-fill-color: whitesmoke;
+        }
+
+        h1.contentHeader {
+            -webkit-text-fill-color: steelblue;
+        }
+
+        hr { 
+            border-width: 2px;
+            background-color: gray;
+        } 
+
+
+    </style>
+
+
+
 </head>
-<body>
-    
+
+<body background="https://backgrounddownload.com/wp-content/uploads/2018/09/website-background-template-4.jpg">
+
+    <!-- "topBackground" is a div that has white background and spans the width of the entire top bar. 
+    Basically has the properties of a navbar. Will be part of the navbar when the time comes. -->
+
+    <!-- "dimensions" is an invisible box that is behind everything else, including what will become the navbar. It has width 
+    960 px, and is used to position many other divs. It's basically a container, which I'll use after I create my navbar-->
+
+        <!-- another invisible box behind topBackground, which is used to position the two divs "box1" and "menu" and prevent
+        them from going all the way to the edges of the screen. May need something like this for my navbar? We will see what 
+        properties are necessary when the time comes. I dont think I'll need the two divs for the navbar, though I may need one
+        for the background of my name but I will have to see the functionality of the navbar.-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">  
+            <!-- container-fluid spans full width of viewport -->
+            <div class="container-fluid">
+                
+                <div class="navbar-header">
+                    <a class="navbar-brand"><h1 class="name">Elias Daniel</h1></a>
+                </div>
+                
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="nav-item">                  
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                 </ul>
+
+            </div>
+
+        </nav>
+
+        <!-- "contentBox" is the white background where my picture, the "About Me" header box, and the paragraph go. The assignment wants
+        a responsive layout and responsive images, so I'm not sure how to break this down into rows and columns, but I don't think it
+        will be that hard! Also, will have to break down into rows and columns in contact (should be easy, just a form) and portfolio (3
+        identical rows and 2 columns after the 1 by 1 row that contains the word "portfolio")-->
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col" id="contentColumn" style="background-color:whitesmoke">
+               
+                <div class="row single-post no-gutters">
+
+                    <div class="col">
+                        <h1 class="contentHeader">
+                            About Me
+                        </h1>
+                    </div>
+
+                </div>
+
+                <hr>
+                <br>
+
+                <div class="image wrapper float-left pr-3">
+                    <img class="img-responsive" src="https://edaniels2275.github.io/eli.jpg" 
+                    alt="Photo of Eli" style="width : 200px; height : 200px;">
+                </div>
+
+                <div class="single-post-content-wrapper">
+
+                    <p >
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vitae fuga pariatur itaque nesciunt
+                        architecto similique, reiciendis quis facilis vel omnis molestiae minus laudantium recusandae
+                        officiis exercitationem minima repellendus aliquam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi, deserunt sint enim
+                        delectus totam rerum, ipsa quisquam at aperiam ex repellat quasi culpa, vel libero! Hic, totam
+                        dolore. Voluptate.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vitae fuga pariatur itaque nesciunt
+                        architecto similique, reiciendis quis facilis vel omnis molestiae minus laudantium recusandae
+                        officiis exercitationem minima repellendus aliquam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi, deserunt sint enim
+                        delectus totam rerum, ipsa quisquam at aperiam ex repellat quasi culpa, vel libero! Hic, totam
+                        dolore. Voluptate.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vitae fuga pariatur itaque nesciunt
+                        architecto similique, reiciendis quis facilis vel omnis molestiae minus laudantium recusandae
+                        officiis exercitationem minima repellendus aliquam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi, deserunt sint enim
+                        delectus totam rerum, ipsa quisquam at aperiam ex repellat quasi culpa, vel libero! Hic, totam
+                        dolore. Voluptate. 
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
 </body>
+
+<footer>
+    Elias Daniel, 2019
+</footer>
+
 </html>

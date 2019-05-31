@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contact</title> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="https://edaniels2275.github.io/headerIcon.png">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .navbar { 
+            margin-bottom: 50px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: whitesmoke;
+            text-align: center;
+            z-index:-1000;
+        }
+
+        #contentColumn {
+            padding:50px
+        }
+
+        .navbar-header {
+            background-color: steelblue;
+            z-index: 50;
+        }
+
+        h1.name {
+            -webkit-text-fill-color: whitesmoke;
+        }
+
+        h1.contentHeader {
+            -webkit-text-fill-color: steelblue;
+        }
+
+        hr { 
+            border-width: 2px;
+            background-color: gray;
+        } 
+
+    </style>
+
 </head>
-<body>
+
+<body background="https://backgrounddownload.com/wp-content/uploads/2018/09/website-background-template-4.jpg">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">  
+            
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand"><h1 class="name">Elias Daniel</h1></a>
+                </div>
+                
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="nav-item">                  
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col" id="contentColumn" style="background-color:whitesmoke">   
+
+                <div class="row single-post no-gutters">
+
+                    <div class="col">
+                        <h1 class="contentHeader">
+                            Contact
+                        </h1>
+                    </div>
     
+                </div>
+
+                <hr>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Satoshi Nakomoto ;)">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="emailAddress">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </form>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
 </body>
+
+<footer>
+    Elias Daniel, 2019
+</footer>
+
 </html>
